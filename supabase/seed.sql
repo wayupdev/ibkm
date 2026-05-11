@@ -1,0 +1,10 @@
+-- Bootstrap the first admin profile.
+-- 1) Create the user from the Supabase dashboard (Auth -> Users -> Add user, email-confirmed).
+-- 2) Run this with the user's UUID:
+--
+-- insert into profiles (id, role, first_name, last_name)
+-- values ('<UUID-FROM-AUTH>', 'admin', 'Prénom', 'Nom');
+--
+-- A welcome announcement (optional):
+-- insert into announcements (title, body, audience, pinned, created_by)
+-- values ('Bienvenue !', 'Première version de l''espace IBKM.', 'all', true, '<ADMIN-UUID>');
